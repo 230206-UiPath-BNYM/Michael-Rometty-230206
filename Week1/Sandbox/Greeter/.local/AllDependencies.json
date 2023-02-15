@@ -20732,9 +20732,9 @@
     "restore": {
       "projectUniqueName": "Greeter",
       "projectName": "Greeter",
-      "projectPath": "C:\\Revature\\Michael-Rometty-230206\\Week1\\Greeter\\.local",
+      "projectPath": "C:\\Revature\\Michael-Rometty-230206\\Week1\\Sandbox\\Greeter\\.local",
       "packagesPath": "C:\\Users\\revat\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\Michael-Rometty-230206\\Week1\\Greeter\\.local"
+      "outputPath": "C:\\Revature\\Michael-Rometty-230206\\Week1\\Sandbox\\Greeter\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
