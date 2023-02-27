@@ -1,0 +1,216 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Automate_with_Rakesh_Demo" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="674.4,2312.8" sap2010:WorkflowViewState.IdRef="Automate_with_Rakesh_Demo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="52">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Automate_with_Rakesh_Demo" sap:VirtualizedContainerService.HintSize="684.8,2248" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_Input" />
+      <Variable x:TypeArguments="x:String" Name="str_MonthYear" />
+      <Variable x:TypeArguments="x:String" Name="str_DateOnly" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="622.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the travel date dd/mm/yyyy">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[str_Input]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="622.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_MonthYear]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[datetime.ParseExact(str_Input, "d/MM/yyyy",system.Globalization.CultureInfo.InvariantCulture ).ToString("MMMM yyyy").Split("/"c)(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="622.4,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[str_MonthYear]" />
+    <Assign sap:VirtualizedContainerService.HintSize="622.4,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_DateOnly]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(str_Input,"d/MM/yyyy",system.Globalization.CultureInfo.InvariantCulture).ToString("d/MM").Split("/"c)(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="622.4,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;DateOnly = &quot; &amp; str_DateOnly]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodatio" sap:VirtualizedContainerService.HintSize="622.4,1360" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8477fa6e-7b11-46ea-868a-2928ae9e0382" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="497.6,1143.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_Calendar" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Check-in Date'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8477fa6e-7b11-46ea-868a-2928ae9e0382" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.booking.com/" DesignTimeRectangle="628, 502, 104, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Check-in Date'" FullSelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' type='button' class='d47738b911 e246f833f7 fe211c0731' aaname='Check-in Date' check:innerText='Check-in Date' /&gt;" Guid="23b87195-6f1a-4711-8494-c48990c84cd6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAoCAYAAAAbrx+3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARsSURBVHhe7Zqxa+NIFIf917gzuDAEUgTOlVVFpDiTxhBYQ8DmihVb7HIhmIMg3HibNRuCm4sIHHYRHELwgsEHBqUwSnF4i+BAQAcpBAcuElQEfvdGmsS2Ysnybpb1wHwgkpnRyPPm08w8kyQgEQopTDCkMMGQwgRDChMMKUwwpDDBkMIEQwoTDClMMKQwwZDCBCNxeXmJh4cHXpSsOom9vT0cHh7yomTVSVxfX6NUKvGiZNX5JmFOvwFtR0EmmUSSrkyuAOOatVjQWV3V8u57Tawq+yydPiEe9qkGtWRg9MgrlsJB840f29OV2lBRrjZh3fFbfhJLCnNhfVSRYpJ2KjDOTJj9NowDDY0r1r4qwtg4FSRzNVgur1oKLmxLR7vPYjTRPqmgsEZ1aRW1QcyHji3USyq0U4dXfD+J4+Pj2MLcvyskK4XiXzavCbI6K+z74MLeNOm3Ke4pvhzV5+oYxlm5d00UaT6KrVcUdnBwEFMYD+JXA2G6JsJ6GJ1oWE/T7+l1esOme7gYtSrIb6RIQArr2xV0/uVNxPhrE5XtdW8Vs76V7tirnxH2aKO5S/1zVL73ml8wK3jOuNbyqFyERRIijBhfaPRcFcYNK1EsFzrKuQzV0f003uLRkGqJge7XPV9FNL3tNDr+RSyxJcZZPfyedAblzxbsW9oS2MQmNXT8eYfdKpIMhUTYGN8NYXgT77+x7lUNCvVX3hswbxzYAwONrj9lEwG03VVpu0vTBEQEOlcYbWcfWkM4c8Y1S7iwJxH6gBUctKt19Gis4/9s9P6gcZEEr+3RpZfPQIHuLfw5pPYxXIoxKv44/BhhU4GybXQSoIUavd3ZT0OvzeNrHVkKsnY1Ruct9d1qzE0UngT0LnW6X6HnRZ8jc4X91sazH3rOZFxB4goLENwCX2yJUfHz8gKWEDaCsRUI+gVzpE4HyANg5eClD/xgwl4IX4AKdZN+vutMxhB8Ju8/V1jYuF4QLsyhFTLZ3qjcN6C/K0DdmmTNocIi4/dviYL1XSpLtE/y9PAs9H6YskUT40tRaLtkW8T05T7S9rJLfUPOyOcVRs9T6I3Mf+ZnBdt6pp/Fz7QfImxsQv+FUvz9nvfZbp8lYVlUzkZwWAy38wUFV9j8+PktC1gurXeHaGz7h6X6toZml6f1+0XUw9L6mYnh6XY6j1rXD9K56aHxseNNDDvQWRaq/h51hj2dA5SttiLSn9cQNp3WH9H3Oprs1CZ9VeAvhXPKVhsJ+8LOoxHa3hk2Jchpe8Ky+22M/jFhOdHxx2E5YQxaCSYN3s9y2KRkoOxoaN+yxhgTw/p/KkNh32moPrWRh3bCVwthdydZF2ur8dU8K4AnHhFn2asIY328i7K5zTL0M0oeplfCPb3Au35Gm9rQYHQbgRXlYnhU8LfKNUpwWPWC+BexvDDJT0UKEwwpTDAS5+fnYH9ikYiB9/cw0zR5UbLqyH8REAwpTDCkMMGQwgRDChMMKUwwpDDBkMIEQwoTDClMKID/AeaNfKc6GTI0AAAAAElFTkSuQmCC" InformativeScreenshot="4a7fe8f4388a033c2e39a756257220e0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="747, 502, 114, 36" ElementType="Button" FriendlyName="'Check-out Date'" FullSelectorArgument="&lt;webctrl aaname='Check-out Date' parentid='indexsearch' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check-out Date' parentid='indexsearch' tag='BUTTON' type='button' class='d47738b911 e246f833f7 fe211c0731' check:innerText='Check-out Date' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAoCAYAAAArIw6WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAS2SURBVHhe7Zixa+NIFMb3r3FnSBEIpFi4VBFXrNkiIY3hIIaFmCvOpDg3i1gIIo3TRCwc5mARgUMuFqU4chDQwYK2CEphnGJxYEELKQQGFwEXhu/eG411smPJyt6G5Yb5gcDSjN68976ZeSM/g0ZJtLCKooVVFC2somhhFUULqyhaWEXRwiqKFlZRtLCKooVVFC2somhhFUULqyhaWEV5vLDjAbzjJmrPq6hUKqisbaL2xseYmuJeg5414N4lXb8VT2X3v5L4RTmYXZyLAwvuVSx7fD8eJ+wXD80NDqCG1okL/0MAv9eFeeyBQ1FK2HEI+4DifJ8vUuJXDdZ5gIByEZw7MH9ap2dV1E5CTGS/YiJ4h3UYp6G8/zaUF3Y6hLNDom5bCHh5LkEpYe9cNGgVNnqrhF30a4Lw2KDnBuwb+aiQEBav9uPvJeyVhSrNRPND/jxMA732Ye3wzK1gfcdGeC87EPFHG81t2bbdRLefsTeNEZw2YfCuIN51MKTH8wmUiVuj+y98n0McoHu4i801tlXF5p4J95Mca4loc2NQrOn2Kq5F8RJyJ9z4Ai16r/aOvSePby9gHRhYF7bIl1ddDDgn0o/sWNaVeKU4TyUoLWxuEBmSPlVUX5jwbiMMz00Y5NjW24Fon1DCDGpvvBsgHkXw37BALVyMxNvwXlHdXttF53yA6G4I/9Sl+Tw/dkS/q7QarKuCQO9pFWxXUN3rwOtHiG99dPbYdgMe+79K2OkE4xsHdepTJ1/HozEm06RflvyczK/C+NyCfTmkmMeILpOcVLmNxxn5MLkvn1PkOMV5KseTCDubdaD15rwkp/ddko2Fo98/e+KgJZAzu8F17MbGFv1uXz4ULB37IwtCAfci2bKc+D3334XzWT5gRnQ+IPtiFa0SlvnqrZgp2l5juPuznDCLfVfkqSTPxBZAg6xi8rdJQWzB7ssHS3gYaDYIGcCSi5OXiLF84iR2DdRe0Kr7kbaxdPUs2JTJCk/4xG5Ra5ZMAp9a2MV37wI4Ry3UX9bSMpMvbHGeylK+xk4CmFyv9h1ES7YlplhYORMPPUS05fC2k168SK87uTU8tcsrlnwwfr1IfZhk7QhD1L9gxYrkxJ5I/KwGMtEf9Xnfv1bY6RjB0RZtnSZ8rqMyb1uvPQzvyMf7qNyKzctTScoLS8R/tUV9qGzUYZ554ojv9zpokdPsZLGwdEcJ5/rYPgsTpz+HcI+cZGVNB7CpLrJtu6DGJvWHxKVE5MY5oq2LkvlvjQ1gi/o9q1M01g801nYbbj9GdGWLCTPnuxRfCNIPEC7RN/Er+7nTRYt3Ffoc7MzOAKkdmoyjOD13ZIXtiAVDh0zyM/y0Ik8leZSwzPjGy5zwKHnPa2i+DXP+oFisJxMMeyZ2Z39ubBhoHvuyjaBvRyc9ya7DOHDpK++h3eQAtaLW0vZnp36yLRtB6hd50u+iIfygU+ovDvzfF32fYPBbPXl/gyZErrBsP7lELuibfjD3Och2GklMa5tonfnozuWE4vmzjZpst6/5yYo8leDRwmr+H2hhFUULqyhaWEXRwiqKFlZRtLCKooVVFC2somhhFUULqyhaWEXRwiqKFlZRtLBKAvwDofCZN2xX/OQAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'February 2023'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="8477fa6e-7b11-46ea-868a-2928ae9e0382" TextString="[str_Calendar]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.booking.com/" DesignTimeRectangle="608, 554, 297, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'February 2023'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='ac78a73c96 ab0d1629e5' /&gt;" Guid="01524ec9-d38f-4996-935a-8da577002535" InformativeScreenshot="a0158d4271e89f5125fde650dceead94.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="628, 502, 104, 36" ElementType="Button" FriendlyName="'Check-in Date'" FullSelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' type='button' class='d47738b911 e246f833f7 fe211c0731' aaname='Check-in Date' check:innerText='Check-in Date' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAoCAYAAAAbrx+3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARySURBVHhe7ZrBS+tIHMf71/RW6KEgeBC2p+Zk8LDFS0F4BaFlDy+8wy4rUhYk9NJ3eeWJ9LIGYWkPUhHpQqELhXgo8bD0HaSCkAUPgYUelBzE7/4mGW0bmzTd5+N1YD4w6Ewy6fzmk5n5FU1AIhRSmGBIYYIhhQmGFCYYUphgSGGCIYUJhhQmGFKYYEhhgiGFCUbi8vISDw8PvCpZdRJ7e3s4PDzkVcmqk7i+vkapVOJVyarzv4Q5/Qa0HQWZZBJJKplcAcY1u2JBZ21Vy7vvLbGq7LN0+oR42Kca1JKB0SNvWAoHzXd+bM8ltaGiXG3CuuO3fCeWFObC+qgixSTtVGCcmTD7bRgHGhpX7PqqCGPjVJDM1WC5vGkpuLAtHe0+i9FE+6SCwhq1pVXUBjEfOrZQL6nQTh3e8PUkjo+PYwtz/6qQrBSKf9i8JcjqrLCvgwt716Tfprin+HLUnqtjGGfl3jVRpPkott5Q2MHBQUxhPIgfDYTpmgjrYXSiYT1Nv6fX6Q2b7uFi1Kogv5EiASmsb1fQ+YdfIsZfmqhsr3urmPWtdMde+4ywRxvNXeqfo/q9d/kVs4LnjGstj8pFWCQhwojxhUbPVWHcsBrFcqGjnMtQG91P4y0eDamVGOh+20spoultp9HxL2KJLTHO6uH3pDMof7Zg39KWwCY2qaHjzzvsVpFkKCTCxvhuCMObeP+Nda9qUKi/8rMB88aBPTDQ6PpTNhFA212Vtrs0TUBEoHOF0Xb2S2sIZ864ZgkX9ixCH7CKg3a1jh6Ndfyvjd5vNC6S4F17dOnlM1Cgewu/D+n6GC7FGBV/HL6NsKlA2TY6CdBCjd7u7Kehd83jSx1ZCrJ2NUbnPfXdasxNFJ4F9C51ul+h50WfI3OF/dTGix96zmRcQeIKCxDcAl9tiVHx8/oClhA2grEVCPoVc6ROB8gDYPVg0Qd+MGEvhC9AhbpJPz90JmMIPpP3nyssbFyvCBfm0AqZbG9U7xvQPxSgbk2y5lBhkfH7t0TB+i6VJdoneXp4Fno/TNmiifGlKLRdsi1iuriPtL3sUt+QM/JlhdHzFHoj85/5WcG2nuln8TPtmwgbm9B/oBR/v+d9tttnSVgWlbMRHBbD7XxBwRU2P35+ywKWS+vdIRrb/mGpvq+h2eVp/X4R9bC0fmZieLqdzqPW9YN0bnpofOx4E8MOdJaFqr9GnWHP5wBlq62I9OcthE2n9Uf0vY4mO7VJXxX4S+GcstVGwv5k59EIbe8MmxLktD1h2f02Rn+bsJzo+OOwnDAGrQSTBu9nOWxSMlB2NLRv2cUYE8P6fypDYd9pqD21kYd2wlcLYXcnWRe7VuOreVYATzwizrI3Ecb6eIWyuc0y9DNKHqZXwj29wLt+Rpva0GB0G4EV5WJ4VPC3yjVKcFjzgvgXsbwwyXdFChMMKUwwEufn52B/YpGIgff3MNM0eVWy6sh/ERAMKUwwpDDBkMIEQwoTDClMMKQwwUg8PT1BFnGKFCZYkcKEKk/4D0IOeNt2f/boAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="435.2,634.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,467.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8477fa6e-7b11-46ea-868a-2928ae9e0382" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.booking.com/" DesignTimeRectangle="1200, 520, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;span&amp;gt;svg' parentid='indexsearch' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='indexsearch' tag='svg' class='' aaname='' /&gt;" Guid="d76fa921-bff2-4a25-8a2b-6e2e71307e6e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABxSURBVEhL7dOxDQAhCIXh20mXYgIdgBlZhwuJtgePhOr4Oy34EomPFteA208AItK99zlhhQAR0TFGCgk/URaBdpBB4CVfhJnPzXcpYM5ZA9zha61z4wctGR1uhYDscCsE2EfLDLfgJaM14NaAWzGg+gJOyc1z/UBTlgAAAABJRU5ErkJggg==" InformativeScreenshot="75758312ff50ae243fc093349a35f875.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="1158, 458, 60, 28" ElementType="Text" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' type='' class='e57ffa4eb5' check:innerText='Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANzSURBVGhD5VfLSiNBFPVX8gn+gks/we0sXYnL2U52wVXETe8kqyEiMkGEiYgwESMGCdI4RlqJkqYJoYkm6UgTztzurld3yjEzQUanLhxIn7r1OnXvrcrCwtoxjIaWNAla0iRoSZOgJU2CljQJWtIkaEmToCU/KnZ9+IgsRHVX065Dlshtt1FuP8MP45GEBYMhSrMO+q8wrwC5PT6A3uxTpeN7xHwC3KI2jnsDIzrtvSZyrC23eY1iK0DthPu+U8wlQKkHN+4MOGf1acePgLkEyLuw486U7+17LKpOL8G6RbkTIpiwjpMJ/I6H1Q3Vr46Vgy4aVFSEH1lcU76mhbY81ui5WD7sw439aTM73KeB1bMnuCNloDCEfe4k7SkBLlGgqPW5K/k1flyJqBaQH3UUHuTAQa8Pa6eRdlZhkWC8UNLgjkeFk3cf+FjPc19F2HEIVxViMoS1JccUAvgBHPYz2Qy15x1UxARkJHYwZt8kWDyGIoD7mLQJn9gmqO3L+WKkPvJXKD5kyn90UlNCXKPymDT7FC3Lor+D6ijhXfua+bqoZaPC6ooNOhdNwQsByALPwyelz2eHbyRE7UieZG77HrWfWQHIBn0ULO4j5wvu2mLMGKmPGEnI2gPWI7YJbehWpoWYiE5QnHSC9RYTsNfFksKn0US5l7j5LRa+BCHA+AmF1Lj3aLD9OxeXCp+BIkDjWE2vOkpd1sCjhSP1kUIdS3sebHaikYnJT4eM+Y2NKA3YWLlNB0W7D7tDOUkhqdYCrQDZRYqNPaNSUvgslBTIFkFxMLMLwJC/QZWFe5TbqxHHBZhQ7neGtDENHBcr5Lt09CTDMqQi6SftLrty/0yAAGWlZkzhTQQgfLljR8ZPVTyYXlnQ2pWsFbRRWYFfSYHsIreUmnEua8YU5hJgtwfb82F9u1SuQEqDA3of8LrY9Vhey0dT0O2mCxwV0oIzRCVegFIUmzJ3F/f7IipmEoAEE20hpcG+LMr6IvhXAvDOLxhNXFYGzX2Xm4gsum7klcMXoCycTPiElAas82wCENRrNzJKJzEf959LAMr1Yotykx4ZqQcL3d2Ok33cJFjc8bQPnOrJjYyiDXosecrK2QOIb3ZmASJs3KCU+aMWzVc5ZNH1VjXgv4aWNAla0iRoSZOgJU2CljQJWtIkaEmToCWNwTF+Adep91eszML4AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'February 2023'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="8477fa6e-7b11-46ea-868a-2928ae9e0382" TextString="[str_Calendar]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.booking.com/" DesignTimeRectangle="608, 554, 297, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'February 2023'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='ac78a73c96 ab0d1629e5' /&gt;" Guid="01524ec9-d38f-4996-935a-8da577002535" InformativeScreenshot="a0158d4271e89f5125fde650dceead94.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="628, 502, 104, 36" ElementType="Button" FriendlyName="'Check-in Date'" FullSelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' type='button' class='d47738b911 e246f833f7 fe211c0731' aaname='Check-in Date' check:innerText='Check-in Date' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAoCAYAAAAbrx+3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARySURBVHhe7ZrBS+tIHMf71/RW6KEgeBC2p+Zk8LDFS0F4BaFlDy+8wy4rUhYk9NJ3eeWJ9LIGYWkPUhHpQqELhXgo8bD0HaSCkAUPgYUelBzE7/4mGW0bmzTd5+N1YD4w6Ewy6fzmk5n5FU1AIhRSmGBIYYIhhQmGFCYYUphgSGGCIYUJhhQmGFKYYEhhgiGFCUbi8vISDw8PvCpZdRJ7e3s4PDzkVcmqk7i+vkapVOJVyarzv4Q5/Qa0HQWZZBJJKplcAcY1u2JBZ21Vy7vvLbGq7LN0+oR42Kca1JKB0SNvWAoHzXd+bM8ltaGiXG3CuuO3fCeWFObC+qgixSTtVGCcmTD7bRgHGhpX7PqqCGPjVJDM1WC5vGkpuLAtHe0+i9FE+6SCwhq1pVXUBjEfOrZQL6nQTh3e8PUkjo+PYwtz/6qQrBSKf9i8JcjqrLCvgwt716Tfprin+HLUnqtjGGfl3jVRpPkott5Q2MHBQUxhPIgfDYTpmgjrYXSiYT1Nv6fX6Q2b7uFi1Kogv5EiASmsb1fQ+YdfIsZfmqhsr3urmPWtdMde+4ywRxvNXeqfo/q9d/kVs4LnjGstj8pFWCQhwojxhUbPVWHcsBrFcqGjnMtQG91P4y0eDamVGOh+20spoultp9HxL2KJLTHO6uH3pDMof7Zg39KWwCY2qaHjzzvsVpFkKCTCxvhuCMObeP+Nda9qUKi/8rMB88aBPTDQ6PpTNhFA212Vtrs0TUBEoHOF0Xb2S2sIZ864ZgkX9ixCH7CKg3a1jh6Ndfyvjd5vNC6S4F17dOnlM1Cgewu/D+n6GC7FGBV/HL6NsKlA2TY6CdBCjd7u7Kehd83jSx1ZCrJ2NUbnPfXdasxNFJ4F9C51ul+h50WfI3OF/dTGix96zmRcQeIKCxDcAl9tiVHx8/oClhA2grEVCPoVc6ROB8gDYPVg0Qd+MGEvhC9AhbpJPz90JmMIPpP3nyssbFyvCBfm0AqZbG9U7xvQPxSgbk2y5lBhkfH7t0TB+i6VJdoneXp4Fno/TNmiifGlKLRdsi1iuriPtL3sUt+QM/JlhdHzFHoj85/5WcG2nuln8TPtmwgbm9B/oBR/v+d9tttnSVgWlbMRHBbD7XxBwRU2P35+ywKWS+vdIRrb/mGpvq+h2eVp/X4R9bC0fmZieLqdzqPW9YN0bnpofOx4E8MOdJaFqr9GnWHP5wBlq62I9OcthE2n9Uf0vY4mO7VJXxX4S+GcstVGwv5k59EIbe8MmxLktD1h2f02Rn+bsJzo+OOwnDAGrQSTBu9nOWxSMlB2NLRv2cUYE8P6fypDYd9pqD21kYd2wlcLYXcnWRe7VuOreVYATzwizrI3Ecb6eIWyuc0y9DNKHqZXwj29wLt+Rpva0GB0G4EV5WJ4VPC3yjVKcFjzgvgXsbwwyXdFChMMKUwwEufn52B/YpGIgff3MNM0eVWy6sh/ERAMKUwwpDDBkMIEQwoTDClMMKQwwUg8PT1BFnGKFCZYkcKEKk/4D0IOeNt2f/boAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="str_MonthYear.Trim&lt;&gt;str_Calendar" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACZSURBVDhPYwABkZCZ/xlMG0jCYD3kaoZhiCFYJEjCyJwJy0/833PqLhyD+ARdiMz58+cvVoysBgMjc9A1wPgglyCrQ8HIHHQDQN4A8R0yFsDFMDAyB2YAOkZWg4GROdg0gzDJLoDxQX4H8ckOA5gBoLAA8UFRKj3tChjD1BDlBZgLYJpJMgDZ+QRdQBbGKkgkpigzQTQzMAAAgK8pu3KDGtoAAAAASUVORK5CYII=" InformativeScreenshot="bcd51619614776448b345bb13e064145.jpg" Selector="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" Url="https://www.booking.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,123 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Scrape_Google2" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="698.4,805.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Scrape_Google2" sap:VirtualizedContainerService.HintSize="496,601.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Weather in Farmington MI - Google Search" sap:VirtualizedContainerService.HintSize="433.6,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="95e911bc-5c2f-4270-8808-ac7874f34a76" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Weather'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95e911bc-5c2f-4270-8808-ac7874f34a76" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Weather+in+Farmington+MI&amp;source=hp&amp;ei=I4j2Y7uEKNyv0PEPgYmNOA&amp;iflsig=AK50M_UAAAAAY_aWM061i73L6g-sw9MPQ4aEzjsEmP3T&amp;ved=0ahUKEwj7oci2iKr9AhXcFzQIHYFEAwcQ4dUDCAo&amp;oq=Weather+in+Farmington+MI&amp;gs_lcp=Cgdnd3Mtd2l6EAwyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgM6CAgAEI8BEOoCOggILhCPARDqAlCgAVinAmDjB2gBcAB4AIABQ4gB6gGSAQE0mAEAoAEBsAEK&amp;sclient=gws-wiz" DesignTimeRectangle="258, 356, 92, 56" DesignTimeScaleFactor="1" FriendlyName="'31-1°F°F°C °C'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='wob_wc' tag='DIV' class='' aaname='' check:innerText='31°F°C' /&gt;" Guid="caa04477-3f6f-4731-affe-6a69fb78f06c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAA8CAYAAACZ1L+0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASDSURBVHhe7ZrNa9tIGIf3X2mh4IOgB0MX9hDowZBDwIdALoEcDDqUFOrtQigpJZQSdGhwoSELKdlS48KaBJZgKKEf1IdiX0IMbePDUh2CfUg7Nx0COhh+KyljRx8jWx82U6/fB16wNZKw3sczmnmlX0BIhQRIhgRIhgRIhgRIhgRIhgRIhgRIhgRIhgRIhgRIhgSM4Pe1h/zTZIgswGQ6Ggd72Hq0ioV8nscqNkoVHB7rYCbf8X+GfAHnTWyrvyFz/QauDY0slrUaTg1+XBoudFTX5gfnLhww3hAFhmqh/5tUVM/5Zs92QRT2rT2CiAR8f//M2W6H9l501Cle8vbh+40QwOoaFhTBjx0W2VWU/03eHYx2BXey3nPGEcAO1Kv9z/dRGCSWC9Bazreo2Mnz8KMO7Wkd350vDO+ePsO7H84Xh76cl1/5BgcuZHDcFaECzGMNOVcSYoWSx9ZxTAk9Aye7K7gpON/UCLDbAsnn8DZ/TxAL6Fo/3P/Pt5Ja3K3j27krsaaBzpeaeIia09C44PuNgjWxtaR4j3fFWIegtAIswoagzxXxv/wShs9fg9chEGDg6J4vGYp1IWe8OQT24XGgx+T+bPPWcNiH0cNcPAFhjE+AGLs3hI/1YQQFtHcw50nAPDYjDiedv1XXcVYoGk56vNFPr4vD9bzg5q4g4xMyHQIux/n0AiwMvY4Xfyw543HmUR2RR3OziQ1P8m5jW9AJzLMaHuTc+/HIruBFy0BD824fqwDXea/C+qPwvfxIETDA7KIT63wMh6r34jaPeZObixY2fQJu3q0MprAnkxTw0w9BKfEnr/hGvDC4mmVlcee17ull0ylg1E1Y3D5mAcFuLuwBDqY17dRQFawZplXA+KahSTHr2HAl7tr1+zhKsDKeWgEWY1uIJeHbqyVP4jL33lqT2vhMswAH/m+3j+1H2L1hbAJY3bcOsNcOXd4Yk8kISEYiATFILcBkbRw+WfLN56OvHUSQgBDYm3VXKTqPnK9o5gSfy6eBBIRgF7rciQnEr+s4GtRekvMzCZg04xXgRBbLz5tgYSWICJCAEKIJuIyMuo9OQgkkICo9E8aZdRN+ruKWoKKZVAIJSILRRln11/SV0FLEMEhAUnpdVP0S5nZwGrMXkIA06BUsupIXVpIeBglIRbAgV/gnXgJJQErSJpAEWLObzqc9FP+KV7jqQwKi4xVgMjR272OxX2JQHqMRu6QjeCbQ5E0RmeEe0EV50Xvxi6903haRwE04/jOBmR6CjNqq5+Kdd2uilpVF09C7tdjPBGb7HtBrY9v/xoKiotwekUbhQmw+9hTUZrYFWJitkuC1RAUL6xU0dAazv7DqlyKs+4bo5apcqRX9lRYXMy/AJvCEK2bk1t5SMS4CoQJsjNYelkUPXYZGFsu7LRgJk29DAtz0rKlpSLXTGwpuqTv4qKd7GmZDAkTYi7MvNZRLGoor/ceSKyg+KaFca6MT9U1owkN0AcREIAGSIQGSIQGSIQGSIQGSIQGSIQGSIQGSIQGSIQGSIQGSIQFSAf4DNmWSfFBCEX8AAAAASUVORK5CYII=" InformativeScreenshot="4e1e00bc49423a3894b7e4cdb8d84fc2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Weather in Farmington MI - Google Search' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="514, 356, 326, 26" ElementType="Text" FriendlyName="'Weather'" FullSelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' type='' class='wob_loc q8U8x' aaname='Weather' check:innerText='Weather' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="f4d678730ffff3201c6682f94e1bf27a.jpg" Selector="&lt;html app='msedge.exe' title='Weather in Farmington MI - Google Search' /&gt;" Title="Weather in Farmington MI - Google Search" Url="https://www.google.com/search?q=Weather+in+Farmington+MI&amp;source=hp&amp;ei=I4j2Y7uEKNyv0PEPgYmNOA&amp;iflsig=AK50M_UAAAAAY_aWM061i73L6g-sw9MPQ4aEzjsEmP3T&amp;ved=0ahUKEwj7oci2iKr9AhXcFzQIHYFEAwcQ4dUDCAo&amp;oq=Weather+in+Farmington+MI&amp;gs_lcp=Cgdnd3Mtd2l6EAwyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgM6CAgAEI8BEOoCOggILhCPARDqAlCgAVinAmDjB2gBcAB4AIABQ4gB6gGSAQE0mAEAoAEBsAEK&amp;sclient=gws-wiz" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
